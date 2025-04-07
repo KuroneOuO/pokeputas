@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import './app.css'
 import Aleatorios from './componentes/aleatorios'
 import Capturados from './componentes/capturados'
 import Favoritos from './componentes/favoritos'
@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
 
-      <menu />
+      <Menu />
       <Routes>
       <Route path="/" element={<Lista />} />
         <Route path="/usuarios" element={<Usuarios />} />
