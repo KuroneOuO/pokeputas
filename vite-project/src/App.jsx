@@ -9,10 +9,11 @@ import Menu from './componentes/menu'
 import Pokemon from './componentes/pokemon'
 import Usuarios from './componentes/usuarios'
 import Filtro from './componentes/filtro';
-
+import { AppProvider } from './contexto/contexto';
 function App() {
 
   return (
+    <AppProvider>
     <Router>
 
       <Menu />
@@ -25,8 +26,8 @@ function App() {
         <Route path="/pokemon/:name" element={<Pokemon />} />
       </Routes>
     </Router>
-  
-  )
+  </AppProvider>
+  );
 }
 
 export default App
