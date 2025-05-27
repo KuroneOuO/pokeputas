@@ -18,7 +18,7 @@ function Aleatorios() {
   const generar = () => {
     let nuevosAleatorios = [];
 
-    while (nuevosAleatorios.length < 4) {
+    while (nuevosAleatorios.length < 100) {
       const index = Math.floor(Math.random() * data.length);
       nuevosAleatorios.push(data[index]);
     }
